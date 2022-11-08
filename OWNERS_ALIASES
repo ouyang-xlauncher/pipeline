@@ -1,0 +1,37 @@
+aliases:
+  pipeline-approvers:
+  - afrittoli
+  - bobcatfish
+  - dibyom
+  - dlorenc
+  - ImJasonH
+  - vdemeester
+  - pritidesai
+  - jerop
+
+  apis-approvers:
+  - afrittoli
+  - bobcatfish
+  - dibyom
+  - dlorenc
+  - ImJasonH
+  - vdemeester
+  - pritidesai
+  - jerop
+
+  productivity-approvers:
+  - afrittoli
+  - bobcatfish
+  - vdemeester
+  productivity-reviewers:
+  - dibyom
+  - dlorenc
+  - ImJasonH
+
+# Alumni ❤️
+# tejal29
+# pivotal-nader-ziada
+# shashwathi
+# aaron-prindle
+# abayer
+# sbwsg
