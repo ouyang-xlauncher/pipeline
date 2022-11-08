@@ -130,9 +130,9 @@ func validateWorkspaceBindings(ctx context.Context, wb []WorkspaceBinding) *apis
 }
 
 // validatePipelineResources validates that
-//	1. resource is not declared more than once
-//	2. if both resource reference and resource spec is defined at the same time
-//	3. at least resource ref or resource spec is defined
+//  1. resource is not declared more than once
+//  2. if both resource reference and resource spec is defined at the same time
+//  3. at least resource ref or resource spec is defined
 func validatePipelineResources(ctx context.Context, resources []TaskResourceBinding, path string) *apis.FieldError {
 	encountered := sets.NewString()
 	for _, r := range resources {

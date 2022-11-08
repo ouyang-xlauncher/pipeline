@@ -54,7 +54,6 @@ var AllResourceTypes = resource.AllResourceTypes
 
 // PipelineResource describes a resource that is an input to or output from a
 // Task.
-//
 type PipelineResource = resource.PipelineResource
 
 // PipelineResourceSpec defines  an individual resources used in the pipeline.

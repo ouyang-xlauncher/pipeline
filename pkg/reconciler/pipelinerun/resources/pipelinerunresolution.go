@@ -259,10 +259,11 @@ func (t *ResolvedPipelineRunTask) skipBecauseWhenExpressionsEvaluatedToFalse(fac
 }
 
 // skipBecauseParentTaskWasSkipped loops through the parent tasks and checks if the parent task skipped:
-//    if yes, is it because of when expressions and are when expressions?
-//        if yes, it ignores this parent skip and continue evaluating other parent tasks
-//        if no, it returns true to skip the current task because this parent task was skipped
-//    if no, it continues checking the other parent tasks
+//
+//	if yes, is it because of when expressions and are when expressions?
+//	    if yes, it ignores this parent skip and continue evaluating other parent tasks
+//	    if no, it returns true to skip the current task because this parent task was skipped
+//	if no, it continues checking the other parent tasks
 func (t *ResolvedPipelineRunTask) skipBecauseParentTaskWasSkipped(facts *PipelineRunFacts) bool {
 	stateMap := facts.State.ToMap()
 	node := facts.TasksGraph.Nodes[t.PipelineTask.Name]
