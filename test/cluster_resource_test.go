@@ -24,11 +24,11 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tektoncd/pipeline/test/parse"
+	"github.com/ouyang-xlauncher/pipeline/test/parse"
 
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	knativetest "knative.dev/pkg/test"

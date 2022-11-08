@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/hashicorp/go-multierror"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/termination"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/termination"
 	"go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

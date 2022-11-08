@@ -25,11 +25,11 @@ import (
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/pod"
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/pod"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 )
 
 // ApplyParameters applies the params from a TaskRun.Input.Parameters to a TaskSpec

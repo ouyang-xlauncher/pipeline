@@ -21,7 +21,7 @@ import (
 	"crypto/sha256"
 	"fmt"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
 	"go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"

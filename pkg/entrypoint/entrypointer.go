@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/termination"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/termination"
 	"go.uber.org/zap"
 )
 

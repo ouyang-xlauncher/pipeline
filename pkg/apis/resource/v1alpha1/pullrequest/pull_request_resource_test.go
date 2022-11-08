@@ -22,12 +22,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/pullrequest"
-	"github.com/tektoncd/pipeline/test/diff"
-	"github.com/tektoncd/pipeline/test/names"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/pullrequest"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
+	"github.com/ouyang-xlauncher/pipeline/test/names"
 	corev1 "k8s.io/api/core/v1"
 )
 

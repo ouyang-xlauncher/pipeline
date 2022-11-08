@@ -23,9 +23,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tektoncd/pipeline/test/parse"
+	"github.com/ouyang-xlauncher/pipeline/test/parse"
 
-	"github.com/tektoncd/pipeline/pkg/reconciler/pipelinerun"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/pipelinerun"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	knativetest "knative.dev/pkg/test"
 )

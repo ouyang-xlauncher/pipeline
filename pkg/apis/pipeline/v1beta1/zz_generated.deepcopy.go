@@ -22,9 +22,9 @@ limitations under the License.
 package v1beta1
 
 import (
-	pod "github.com/tektoncd/pipeline/pkg/apis/pipeline/pod"
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	runv1alpha1 "github.com/tektoncd/pipeline/pkg/apis/run/v1alpha1"
+	pod "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/pod"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	runv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/run/v1alpha1"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"

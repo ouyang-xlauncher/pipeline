@@ -20,12 +20,12 @@ import (
 	"encoding/json"
 	"flag"
 
-	"github.com/tektoncd/pipeline/pkg/termination"
+	"github.com/ouyang-xlauncher/pipeline/pkg/termination"
 	"knative.dev/pkg/logging"
 
 	"github.com/google/go-containerregistry/pkg/v1/layout"
-	v1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/image"
+	v1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/image"
 )
 
 var (

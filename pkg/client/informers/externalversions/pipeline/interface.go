@@ -19,9 +19,9 @@ limitations under the License.
 package pipeline
 
 import (
-	internalinterfaces "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline/v1alpha1"
-	v1beta1 "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline/v1beta1"
+	internalinterfaces "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline/v1alpha1"
+	v1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline/v1beta1"
 )
 
 // Interface provides access to each of this group's versions.

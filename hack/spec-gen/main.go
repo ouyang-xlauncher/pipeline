@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	tekton "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
+	tekton "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
 
 	"github.com/go-openapi/spec"
 	"k8s.io/klog"
@@ -68,8 +68,8 @@ func main() {
 func swaggify(name string) string {
 	name = strings.ReplaceAll(name, "./pkg/apis/pipeline/", "")
 	name = strings.ReplaceAll(name, "./pkg/apis/resource/", "")
-	name = strings.ReplaceAll(name, "github.com/tektoncd/pipeline/pkg/apis/pipeline/", "")
-	name = strings.ReplaceAll(name, "github.com/tektoncd/pipeline/pkg/apis/resource/", "")
+	name = strings.ReplaceAll(name, "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/", "")
+	name = strings.ReplaceAll(name, "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/", "")
 	name = strings.ReplaceAll(name, "k8s.io/api/core/", "")
 	name = strings.ReplaceAll(name, "k8s.io/apimachinery/pkg/apis/meta/", "")
 	name = strings.ReplaceAll(name, "knative.dev/pkg/apis.", "knative/")

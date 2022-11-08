@@ -20,9 +20,9 @@ import (
 	"context"
 	"time"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	runv1alpha1 "github.com/tektoncd/pipeline/pkg/apis/run/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	runv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/run/v1alpha1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"

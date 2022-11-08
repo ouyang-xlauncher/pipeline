@@ -24,9 +24,9 @@ import (
 	reflect "reflect"
 	strings "strings"
 
-	versionedscheme "github.com/tektoncd/pipeline/pkg/client/clientset/versioned/scheme"
-	client "github.com/tektoncd/pipeline/pkg/client/injection/client"
-	pipeline "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1beta1/pipeline"
+	versionedscheme "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/scheme"
+	client "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/client"
+	pipeline "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1beta1/pipeline"
 	zap "go.uber.org/zap"
 	corev1 "k8s.io/api/core/v1"
 	labels "k8s.io/apimachinery/pkg/labels"

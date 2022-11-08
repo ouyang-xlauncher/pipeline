@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tektoncd/pipeline/pkg/pullrequest"
+	"github.com/ouyang-xlauncher/pipeline/pkg/pullrequest"
 	"go.uber.org/zap"
 )
 

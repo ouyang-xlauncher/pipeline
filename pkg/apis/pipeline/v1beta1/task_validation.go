@@ -23,9 +23,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	"github.com/tektoncd/pipeline/pkg/apis/validate"
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/validate"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/validation"

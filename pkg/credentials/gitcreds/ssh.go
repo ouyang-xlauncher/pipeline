@@ -24,7 +24,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tektoncd/pipeline/pkg/credentials"
+	"github.com/ouyang-xlauncher/pipeline/pkg/credentials"
 	corev1 "k8s.io/api/core/v1"
 )
 

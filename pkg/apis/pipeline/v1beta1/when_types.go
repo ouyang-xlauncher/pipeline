@@ -19,7 +19,7 @@ package v1beta1
 import (
 	"fmt"
 
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 	"k8s.io/apimachinery/pkg/selection"
 )
 

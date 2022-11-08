@@ -31,7 +31,7 @@ import (
 	"testing"
 
 	"github.com/ghodss/yaml"
-	"github.com/tektoncd/pipeline/pkg/names"
+	"github.com/ouyang-xlauncher/pipeline/pkg/names"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

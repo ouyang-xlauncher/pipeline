@@ -26,7 +26,7 @@ import (
 	"strings"
 
 	"github.com/mitchellh/go-homedir"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
 	corev1 "k8s.io/api/core/v1"
 )
 

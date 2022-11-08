@@ -21,8 +21,8 @@ package fake
 import (
 	context "context"
 
-	factoryfiltered "github.com/tektoncd/pipeline/pkg/client/injection/informers/factory/filtered"
-	filtered "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1alpha1/clustertask/filtered"
+	factoryfiltered "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/factory/filtered"
+	filtered "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1alpha1/clustertask/filtered"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 	logging "knative.dev/pkg/logging"

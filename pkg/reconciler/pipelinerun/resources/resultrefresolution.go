@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
 )
 
 // ResolvedResultRefs represents all of the ResolvedResultRef for a pipeline task

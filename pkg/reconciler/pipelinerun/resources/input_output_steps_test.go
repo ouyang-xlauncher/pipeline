@@ -21,10 +21,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/reconciler/pipelinerun/resources"
-	"github.com/tektoncd/pipeline/test/diff"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/pipelinerun/resources"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

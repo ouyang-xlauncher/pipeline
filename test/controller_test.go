@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	fakepipelineruninformer "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1beta1/pipelinerun/fake"
-	ttesting "github.com/tektoncd/pipeline/pkg/reconciler/testing"
+	fakepipelineruninformer "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1beta1/pipelinerun/fake"
+	ttesting "github.com/ouyang-xlauncher/pipeline/pkg/reconciler/testing"
 	appsv1 "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

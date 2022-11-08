@@ -42,11 +42,11 @@ package test
 import (
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	"github.com/tektoncd/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1beta1"
-	resourceversioned "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned/typed/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	"github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1beta1"
+	resourceversioned "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned/typed/resource/v1alpha1"
 	"k8s.io/client-go/kubernetes"
 	knativetest "knative.dev/pkg/test"
 )

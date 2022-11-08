@@ -29,8 +29,8 @@ import (
 	imgname "github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	ociremote "github.com/google/go-containerregistry/pkg/v1/remote"
-	"github.com/tektoncd/pipeline/pkg/client/clientset/versioned/scheme"
-	"github.com/tektoncd/pipeline/pkg/remote"
+	"github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/scheme"
+	"github.com/ouyang-xlauncher/pipeline/pkg/remote"
 	"k8s.io/apimachinery/pkg/runtime"
 )
 

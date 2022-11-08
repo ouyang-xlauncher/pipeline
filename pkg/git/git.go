@@ -27,7 +27,7 @@ import (
 	"strings"
 
 	homedir "github.com/mitchellh/go-homedir"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
 	"go.uber.org/zap"
 )
 

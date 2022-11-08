@@ -21,9 +21,9 @@ package fake
 import (
 	context "context"
 
-	externalversions "github.com/tektoncd/pipeline/pkg/client/resource/informers/externalversions"
-	fake "github.com/tektoncd/pipeline/pkg/client/resource/injection/client/fake"
-	factory "github.com/tektoncd/pipeline/pkg/client/resource/injection/informers/factory"
+	externalversions "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/informers/externalversions"
+	fake "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/injection/client/fake"
+	factory "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/injection/informers/factory"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 )

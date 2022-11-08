@@ -28,28 +28,28 @@ import (
 
 	"github.com/ghodss/yaml"
 	"github.com/hashicorp/go-multierror"
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/pod"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/apis/resource"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	clientset "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	taskrunreconciler "github.com/tektoncd/pipeline/pkg/client/injection/reconciler/pipeline/v1beta1/taskrun"
-	listers "github.com/tektoncd/pipeline/pkg/client/listers/pipeline/v1beta1"
-	resourcelisters "github.com/tektoncd/pipeline/pkg/client/resource/listers/resource/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/internal/affinityassistant"
-	"github.com/tektoncd/pipeline/pkg/internal/deprecated"
-	"github.com/tektoncd/pipeline/pkg/internal/limitrange"
-	podconvert "github.com/tektoncd/pipeline/pkg/pod"
-	tknreconciler "github.com/tektoncd/pipeline/pkg/reconciler"
-	"github.com/tektoncd/pipeline/pkg/reconciler/events"
-	"github.com/tektoncd/pipeline/pkg/reconciler/events/cloudevent"
-	"github.com/tektoncd/pipeline/pkg/reconciler/taskrun/resources"
-	"github.com/tektoncd/pipeline/pkg/reconciler/volumeclaim"
-	"github.com/tektoncd/pipeline/pkg/taskrunmetrics"
-	_ "github.com/tektoncd/pipeline/pkg/taskrunmetrics/fake" // Make sure the taskrunmetrics are setup
-	"github.com/tektoncd/pipeline/pkg/workspace"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/pod"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	clientset "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	taskrunreconciler "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/reconciler/pipeline/v1beta1/taskrun"
+	listers "github.com/ouyang-xlauncher/pipeline/pkg/client/listers/pipeline/v1beta1"
+	resourcelisters "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/listers/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/internal/affinityassistant"
+	"github.com/ouyang-xlauncher/pipeline/pkg/internal/deprecated"
+	"github.com/ouyang-xlauncher/pipeline/pkg/internal/limitrange"
+	podconvert "github.com/ouyang-xlauncher/pipeline/pkg/pod"
+	tknreconciler "github.com/ouyang-xlauncher/pipeline/pkg/reconciler"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/events"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/events/cloudevent"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/taskrun/resources"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/volumeclaim"
+	"github.com/ouyang-xlauncher/pipeline/pkg/taskrunmetrics"
+	_ "github.com/ouyang-xlauncher/pipeline/pkg/taskrunmetrics/fake" // Make sure the taskrunmetrics are setup
+	"github.com/ouyang-xlauncher/pipeline/pkg/workspace"
 	corev1 "k8s.io/api/core/v1"
 	k8serrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -180,6 +180,12 @@ func (c *Reconciler) ReconcileKind(ctx context.Context, tr *v1beta1.TaskRun) pkg
 		return c.finishReconcileUpdateEmitEvents(ctx, tr, before, err)
 	}
 
+	// Check for Pod Failures
+	if failed, message := c.checkPodFailures(ctx, tr); failed {
+		err := c.failTaskRun(ctx, tr, v1beta1.TaskRunReasonImagePullFailed, message)
+		return c.finishReconcileUpdateEmitEvents(ctx, tr, before, err)
+	}
+
 	// prepare fetches all required resources, validates them together with the
 	// taskrun, runs API convertions. Errors that come out of prepare are
 	// permanent one, so in case of error we update, emit events and return
@@ -218,6 +224,17 @@ func (c *Reconciler) ReconcileKind(ctx context.Context, tr *v1beta1.TaskRun) pkg
 	}
 	return nil
 }
+
+func (c *Reconciler) checkPodFailures(ctx context.Context, tr *v1beta1.TaskRun) (bool, string) {
+	for _, step := range tr.Status.Steps {
+		if step.Waiting != nil && step.Waiting.Reason == "ImagePullBackOff" {
+			message := fmt.Sprintf(`A step in TaskRun %q failed to pull the image. The pod errored with the message: "%s."`, tr.Name, step.Waiting.Message)
+			return true, message
+		}
+	}
+	return false, ""
+}
+
 func (c *Reconciler) stopSidecars(ctx context.Context, tr *v1beta1.TaskRun) (*corev1.Pod, error) {
 	logger := logging.FromContext(ctx)
 	// do not continue without knowing the associated pod

@@ -17,7 +17,7 @@
 package v1beta1
 
 import (
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 )
 
 // ApplyStepReplacements applies variable interpolation on a Step.

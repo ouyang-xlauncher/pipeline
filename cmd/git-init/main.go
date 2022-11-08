@@ -19,9 +19,9 @@ import (
 	"flag"
 	"os"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/git"
-	"github.com/tektoncd/pipeline/pkg/termination"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/git"
+	"github.com/ouyang-xlauncher/pipeline/pkg/termination"
 	"go.uber.org/zap"
 )
 

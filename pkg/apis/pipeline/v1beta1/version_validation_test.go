@@ -20,7 +20,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
 )
 
 func TestValidateEnabledAPIFields(t *testing.T) {

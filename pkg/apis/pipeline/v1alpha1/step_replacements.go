@@ -17,7 +17,7 @@
 package v1alpha1
 
 import (
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 )
 
 func ApplyStepReplacements(step *Step, stringReplacements map[string]string, arrayReplacements map[string][]string) {

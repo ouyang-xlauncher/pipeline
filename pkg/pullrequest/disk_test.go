@@ -29,7 +29,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/jenkins-x/go-scm/scm"
-	"github.com/tektoncd/pipeline/test/diff"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
 )
 
 func TestToDisk(t *testing.T) {

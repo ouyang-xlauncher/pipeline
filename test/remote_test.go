@@ -23,7 +23,7 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/tektoncd/pipeline/test/parse"
+	"github.com/ouyang-xlauncher/pipeline/test/parse"
 
 	"github.com/ghodss/yaml"
 	"github.com/google/go-cmp/cmp"
@@ -31,7 +31,7 @@ import (
 	"github.com/google/go-containerregistry/pkg/name"
 	"github.com/google/go-containerregistry/pkg/registry"
 	"github.com/google/go-containerregistry/pkg/v1/remote"
-	tkremote "github.com/tektoncd/pipeline/pkg/remote/oci"
+	tkremote "github.com/ouyang-xlauncher/pipeline/pkg/remote/oci"
 )
 
 func TestCreateImage(t *testing.T) {

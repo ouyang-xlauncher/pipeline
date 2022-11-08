@@ -276,7 +276,7 @@ spec:
             - name: revision
               value: main
             - name: url
-              value: https://github.com/tektoncd/pipeline
+              value: https://github.com/ouyang-xlauncher/pipeline
     outputs:
       - name: baked-image
         resourceSpec:

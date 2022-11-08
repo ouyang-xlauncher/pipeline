@@ -21,9 +21,9 @@ package fakeFilteredFactory
 import (
 	context "context"
 
-	externalversions "github.com/tektoncd/pipeline/pkg/client/informers/externalversions"
-	fake "github.com/tektoncd/pipeline/pkg/client/injection/client/fake"
-	filtered "github.com/tektoncd/pipeline/pkg/client/injection/informers/factory/filtered"
+	externalversions "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions"
+	fake "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/client/fake"
+	filtered "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/factory/filtered"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"

@@ -23,9 +23,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	internalinterfaces "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/internalinterfaces"
-	pipeline "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline"
+	versioned "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	internalinterfaces "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/internalinterfaces"
+	pipeline "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

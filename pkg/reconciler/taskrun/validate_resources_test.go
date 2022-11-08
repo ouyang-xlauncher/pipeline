@@ -20,15 +20,15 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	"github.com/tektoncd/pipeline/pkg/reconciler/taskrun"
-	"github.com/tektoncd/pipeline/pkg/reconciler/taskrun/resources"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/taskrun"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/taskrun/resources"
 )
 
 func TestValidateResolvedTaskResources_ValidResources(t *testing.T) {

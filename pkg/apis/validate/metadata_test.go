@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/apis/validate"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/validate"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 

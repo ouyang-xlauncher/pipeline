@@ -21,12 +21,12 @@ package task
 import (
 	context "context"
 
-	apispipelinev1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	versioned "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	v1beta1 "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline/v1beta1"
-	client "github.com/tektoncd/pipeline/pkg/client/injection/client"
-	factory "github.com/tektoncd/pipeline/pkg/client/injection/informers/factory"
-	pipelinev1beta1 "github.com/tektoncd/pipeline/pkg/client/listers/pipeline/v1beta1"
+	apispipelinev1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	versioned "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	v1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline/v1beta1"
+	client "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/client"
+	factory "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/factory"
+	pipelinev1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/client/listers/pipeline/v1beta1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	cache "k8s.io/client-go/tools/cache"
@@ -59,7 +59,7 @@ func Get(ctx context.Context) v1beta1.TaskInformer {
 	untyped := ctx.Value(Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline/v1beta1.TaskInformer from context.")
+			"Unable to fetch github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline/v1beta1.TaskInformer from context.")
 	}
 	return untyped.(v1beta1.TaskInformer)
 }

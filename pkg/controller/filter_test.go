@@ -19,11 +19,11 @@ package controller_test
 import (
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	fakeruninformer "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1alpha1/run/fake"
-	"github.com/tektoncd/pipeline/pkg/controller"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	fakeruninformer "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1alpha1/run/fake"
+	"github.com/ouyang-xlauncher/pipeline/pkg/controller"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	rtesting "knative.dev/pkg/reconciler/testing"

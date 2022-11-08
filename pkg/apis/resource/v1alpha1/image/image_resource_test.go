@@ -23,9 +23,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/image"
-	"github.com/tektoncd/pipeline/test/diff"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/image"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
 )
 
 func TestNewImageResource_Invalid(t *testing.T) {

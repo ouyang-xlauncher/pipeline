@@ -19,15 +19,15 @@ package resource
 import (
 	"fmt"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	pipelinev1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/cloudevent"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/cluster"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/git"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/image"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/pullrequest"
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/storage"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	pipelinev1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/cloudevent"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/cluster"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/git"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/image"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/pullrequest"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/storage"
 )
 
 // FromType returns an instance of the correct PipelineResource object type which can be

@@ -24,9 +24,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	clientset "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	clientset "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
 	"go.uber.org/zap"
 	jsonpatch "gomodules.xyz/jsonpatch/v2"
 	corev1 "k8s.io/api/core/v1"

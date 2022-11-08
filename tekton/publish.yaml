@@ -8,7 +8,7 @@ spec:
   params:
     - name: package
       description: package to release (e.g. github.com/<org>/<project>)
-      default: github.com/tektoncd/pipeline
+      default: github.com/ouyang-xlauncher/pipeline
     - name: images
       description: List of cmd/* paths to be published as images
       default: "controller webhook entrypoint nop kubeconfigwriter git-init imagedigestexporter pullrequest-init"
@@ -37,7 +37,7 @@ spec:
         be /go/src/$(params.package) however that is not possible today,
         see https://github.com/tektoncd/pipeline/issues/3786. To use this
         task on a fork of pipeline change the mountPath below
-      mountPath: /go/src/github.com/tektoncd/pipeline
+      mountPath: /go/src/github.com/ouyang-xlauncher/pipeline
     - name: release-secret
       description: The secret that contains a service account authorized to push to the imageRegistry and to the output bucket
     - name: output

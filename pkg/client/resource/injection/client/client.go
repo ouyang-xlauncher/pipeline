@@ -24,9 +24,9 @@ import (
 	errors "errors"
 	fmt "fmt"
 
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	versioned "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned"
-	typedtektonv1alpha1 "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned/typed/resource/v1alpha1"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	versioned "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned"
+	typedtektonv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned/typed/resource/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	unstructured "k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	runtime "k8s.io/apimachinery/pkg/runtime"
@@ -66,10 +66,10 @@ func Get(ctx context.Context) versioned.Interface {
 	if untyped == nil {
 		if injection.GetConfig(ctx) == nil {
 			logging.FromContext(ctx).Panic(
-				"Unable to fetch github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned.Interface from context. This context is not the application context (which is typically given to constructors via sharedmain).")
+				"Unable to fetch github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned.Interface from context. This context is not the application context (which is typically given to constructors via sharedmain).")
 		} else {
 			logging.FromContext(ctx).Panic(
-				"Unable to fetch github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned.Interface from context.")
+				"Unable to fetch github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned.Interface from context.")
 		}
 	}
 	return untyped.(versioned.Interface)

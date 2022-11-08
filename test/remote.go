@@ -29,7 +29,7 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
 	remoteimg "github.com/google/go-containerregistry/pkg/v1/remote"
 	"github.com/google/go-containerregistry/pkg/v1/tarball"
-	tkremote "github.com/tektoncd/pipeline/pkg/remote/oci"
+	tkremote "github.com/ouyang-xlauncher/pipeline/pkg/remote/oci"
 	"k8s.io/apimachinery/pkg/runtime"
 )
 

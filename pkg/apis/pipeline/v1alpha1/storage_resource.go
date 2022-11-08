@@ -17,7 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
-	resource "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	resource "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 )
 
 // PipelineResourceTypeGCS is the subtype for the GCSResources, which is backed by a GCS blob/directory.

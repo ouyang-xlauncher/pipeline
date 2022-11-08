@@ -17,7 +17,7 @@
 package v1beta1
 
 import (
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 	corev1 "k8s.io/api/core/v1"
 )
 

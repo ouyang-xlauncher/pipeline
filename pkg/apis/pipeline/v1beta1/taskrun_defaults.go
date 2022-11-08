@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"knative.dev/pkg/apis"
 )

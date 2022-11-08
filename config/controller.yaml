@@ -61,16 +61,16 @@ spec:
       serviceAccountName: tekton-pipelines-controller
       containers:
       - name: tekton-pipelines-controller
-        image: ko://github.com/tektoncd/pipeline/cmd/controller
+        image: ko://github.com/ouyang-xlauncher/pipeline/cmd/controller
         args: [
           # These images are built on-demand by `ko resolve` and are replaced
           # by image references by digest.
-          "-kubeconfig-writer-image", "ko://github.com/tektoncd/pipeline/cmd/kubeconfigwriter",
-          "-git-image", "ko://github.com/tektoncd/pipeline/cmd/git-init",
-          "-entrypoint-image", "ko://github.com/tektoncd/pipeline/cmd/entrypoint",
-          "-nop-image", "ko://github.com/tektoncd/pipeline/cmd/nop",
-          "-imagedigest-exporter-image", "ko://github.com/tektoncd/pipeline/cmd/imagedigestexporter",
-          "-pr-image", "ko://github.com/tektoncd/pipeline/cmd/pullrequest-init",
+          "-kubeconfig-writer-image", "ko://github.com/ouyang-xlauncher/pipeline/cmd/kubeconfigwriter",
+          "-git-image", "ko://github.com/ouyang-xlauncher/pipeline/cmd/git-init",
+          "-entrypoint-image", "ko://github.com/ouyang-xlauncher/pipeline/cmd/entrypoint",
+          "-nop-image", "ko://github.com/ouyang-xlauncher/pipeline/cmd/nop",
+          "-imagedigest-exporter-image", "ko://github.com/ouyang-xlauncher/pipeline/cmd/imagedigestexporter",
+          "-pr-image", "ko://github.com/ouyang-xlauncher/pipeline/cmd/pullrequest-init",
 
           # This is gcr.io/google.com/cloudsdktool/cloud-sdk:302.0.0-slim
           "-gsutil-image", "gcr.io/google.com/cloudsdktool/cloud-sdk@sha256:27b2c22bf259d9bc1a291e99c63791ba0c27a04d2db0a43241ba0f1f20f4067f",

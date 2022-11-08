@@ -80,7 +80,7 @@ spec:
     description: The precise commit SHA that was fetched by this Task
   steps:
   - name: clone
-    image: ko://github.com/tektoncd/pipeline/cmd/git-init
+    image: ko://github.com/ouyang-xlauncher/pipeline/cmd/git-init
     script: |
       CHECKOUT_DIR="$(workspaces.output.path)/$(params.subdirectory)"
       cleandir() {
@@ -167,7 +167,7 @@ spec:
       runAsUser: 0
   - name: write-digest
     workingDir: $(workspaces.source.path)
-    image: ko://github.com/tektoncd/pipeline/cmd/imagedigestexporter
+    image: ko://github.com/ouyang-xlauncher/pipeline/cmd/imagedigestexporter
     # output of imagedigestexport [{"name":"image","digest":"sha256:eed29..660"}]
     command: ["/ko-app/imagedigestexporter"]
     securityContext:

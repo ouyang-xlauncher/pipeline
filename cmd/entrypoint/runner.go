@@ -25,8 +25,8 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/tektoncd/pipeline/pkg/entrypoint"
-	"github.com/tektoncd/pipeline/pkg/pod"
+	"github.com/ouyang-xlauncher/pipeline/pkg/entrypoint"
+	"github.com/ouyang-xlauncher/pipeline/pkg/pod"
 )
 
 // TODO(jasonhall): Test that original exit code is propagated and that

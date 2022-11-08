@@ -19,7 +19,7 @@ limitations under the License.
 package fake
 
 import (
-	tektonv1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	tektonv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

@@ -140,7 +140,7 @@ spec:
     inputs:
       - name: workspace
         type: git
-        targetPath: go/src/github.com/tektoncd/pipeline
+        targetPath: go/src/github.com/ouyang-xlauncher/pipeline
   steps:
     - name: unit-tests
       image: golang
@@ -148,7 +148,7 @@ spec:
       args:
         - "test"
         - "./..."
-      workingDir: "/workspace/go/src/github.com/tektoncd/pipeline"
+      workingDir: "/workspace/go/src/github.com/ouyang-xlauncher/pipeline"
       env:
         - name: GOPATH
           value: /workspace/go

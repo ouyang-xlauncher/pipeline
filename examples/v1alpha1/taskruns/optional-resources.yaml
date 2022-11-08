@@ -54,7 +54,7 @@ spec:
           type: git
           params:
             - name: url
-              value: https://github.com/tektoncd/pipeline.git
+              value: https://github.com/ouyang-xlauncher/pipeline.git
     params:
       - name: filename
         value: "README.md"
@@ -82,7 +82,7 @@ spec:
           type: git
           params:
             - name: url
-              value: https://github.com/tektoncd/pipeline.git
+              value: https://github.com/ouyang-xlauncher/pipeline.git
     params:
       - name: filename
         value: "invalid.md"
@@ -124,7 +124,7 @@ spec:
           type: git
           params:
             - name: url
-              value: https://github.com/tektoncd/pipeline.git
+              value: https://github.com/ouyang-xlauncher/pipeline.git
     params:
       - name: filename
         value: "README.md"

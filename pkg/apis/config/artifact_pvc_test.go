@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	test "github.com/tektoncd/pipeline/pkg/reconciler/testing"
-	"github.com/tektoncd/pipeline/test/diff"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	test "github.com/ouyang-xlauncher/pipeline/pkg/reconciler/testing"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
 )
 
 func TestNewArtifactPVCFromConfigMap(t *testing.T) {

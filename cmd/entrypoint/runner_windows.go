@@ -24,7 +24,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/tektoncd/pipeline/pkg/entrypoint"
+	"github.com/ouyang-xlauncher/pipeline/pkg/entrypoint"
 )
 
 // TODO(jasonhall): Test that original exit code is propagated and that

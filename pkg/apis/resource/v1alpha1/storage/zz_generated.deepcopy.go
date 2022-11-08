@@ -22,7 +22,7 @@ limitations under the License.
 package storage
 
 import (
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 	v1 "k8s.io/api/core/v1"
 )
 

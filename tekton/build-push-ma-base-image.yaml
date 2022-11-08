@@ -6,7 +6,7 @@ spec:
   params:
   - name: package
     description: package to build (e.g. github.com/<org>/<project>)
-    default: github.com/tektoncd/pipeline
+    default: github.com/ouyang-xlauncher/pipeline
   - name: imageRegistry
     description: The target image registry
   - name: imageRegistryPath

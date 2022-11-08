@@ -19,7 +19,7 @@ package v1alpha1_test
 import (
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
 	"knative.dev/pkg/webhook/resourcesemantics"
 )
 

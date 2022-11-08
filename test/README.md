@@ -43,7 +43,7 @@ You can create a fake PipelineClient for the Controller under test like
 
 ```go
 import (
-    fakepipelineclientset "github.com/tektoncd/pipeline/pkg/client/clientset/versioned/fake
+    fakepipelineclientset "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/fake
 )
 pipelineClient := fakepipelineclientset.NewSimpleClientset()
 ```
@@ -312,7 +312,7 @@ You can use the function `GenerateName()` to append a random string for `crd`s
 or anything else, so that your tests can use unique names each time they run.
 
 ```go
-import "github.com/tektoncd/pipeline/pkg/names"
+import "github.com/ouyang-xlauncher/pipeline/pkg/names"
 
 namespace := names.SimpleNameGenerator.GenerateName("arendelle")
 ```

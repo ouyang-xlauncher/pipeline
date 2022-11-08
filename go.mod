@@ -1,4 +1,4 @@
-module github.com/tektoncd/pipeline
+module github.com/ouyang-xlauncher/pipeline
 
 go 1.13
 

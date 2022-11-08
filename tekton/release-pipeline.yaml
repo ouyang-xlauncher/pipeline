@@ -7,7 +7,7 @@ spec:
   params:
   - name: package
     description: package to release
-    default: github.com/tektoncd/pipeline
+    default: github.com/ouyang-xlauncher/pipeline
   - name: gitRevision
     description: the git revision to release
   - name: imageRegistry

@@ -56,7 +56,7 @@ spec:
           type: git
           params:
             - name: url
-              value: https://github.com/tektoncd/pipeline.git
+              value: https://github.com/ouyang-xlauncher/pipeline.git
     outputs:
       - name: optionalimage
         resourceSpec:
@@ -83,7 +83,7 @@ spec:
           type: git
           params:
             - name: url
-              value: https://github.com/tektoncd/pipeline.git
+              value: https://github.com/ouyang-xlauncher/pipeline.git
   taskRef:
     name: task-check-optional-resources
 ---
@@ -124,7 +124,7 @@ spec:
           type: git
           params:
             - name: url
-              value: https://github.com/tektoncd/pipeline.git
+              value: https://github.com/ouyang-xlauncher/pipeline.git
   taskRef:
     name: task-check-optional-resources
 ---

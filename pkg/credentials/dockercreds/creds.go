@@ -28,7 +28,7 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/tektoncd/pipeline/pkg/credentials"
+	"github.com/ouyang-xlauncher/pipeline/pkg/credentials"
 )
 
 const annotationPrefix = "tekton.dev/docker-"

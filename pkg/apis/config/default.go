@@ -23,7 +23,7 @@ import (
 	"time"
 
 	"github.com/ghodss/yaml"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/pod"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/pod"
 	corev1 "k8s.io/api/core/v1"
 )
 

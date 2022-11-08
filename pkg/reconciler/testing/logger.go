@@ -4,14 +4,14 @@ import (
 	"context"
 	"testing"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/record"
 	filteredinformerfactory "knative.dev/pkg/client/injection/kube/informers/factory/filtered"
 	"knative.dev/pkg/injection"
 	logtesting "knative.dev/pkg/logging/testing"
 
-	"github.com/tektoncd/pipeline/pkg/reconciler/events/cloudevent"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/events/cloudevent"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zaptest"
 	"knative.dev/pkg/controller"

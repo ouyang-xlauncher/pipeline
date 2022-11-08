@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/tektoncd/pipeline/pkg/entrypoint"
+	"github.com/ouyang-xlauncher/pipeline/pkg/entrypoint"
 )
 
 // realPostWriter actually writes files.

@@ -20,9 +20,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	ttesting "github.com/tektoncd/pipeline/pkg/reconciler/testing"
-	"github.com/tektoncd/pipeline/test"
-	"github.com/tektoncd/pipeline/test/diff"
+	ttesting "github.com/ouyang-xlauncher/pipeline/pkg/reconciler/testing"
+	"github.com/ouyang-xlauncher/pipeline/test"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

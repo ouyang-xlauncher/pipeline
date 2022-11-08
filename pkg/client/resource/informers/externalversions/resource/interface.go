@@ -19,8 +19,8 @@ limitations under the License.
 package resource
 
 import (
-	internalinterfaces "github.com/tektoncd/pipeline/pkg/client/resource/informers/externalversions/internalinterfaces"
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/client/resource/informers/externalversions/resource/v1alpha1"
+	internalinterfaces "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/informers/externalversions/internalinterfaces"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/informers/externalversions/resource/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

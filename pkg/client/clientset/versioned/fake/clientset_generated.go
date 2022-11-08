@@ -19,11 +19,11 @@ limitations under the License.
 package fake
 
 import (
-	clientset "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	tektonv1alpha1 "github.com/tektoncd/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1alpha1"
-	faketektonv1alpha1 "github.com/tektoncd/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1alpha1/fake"
-	tektonv1beta1 "github.com/tektoncd/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1beta1"
-	faketektonv1beta1 "github.com/tektoncd/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1beta1/fake"
+	clientset "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	tektonv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1alpha1"
+	faketektonv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1alpha1/fake"
+	tektonv1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1beta1"
+	faketektonv1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned/typed/pipeline/v1beta1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

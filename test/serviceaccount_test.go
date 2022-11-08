@@ -24,7 +24,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tektoncd/pipeline/test/parse"
+	"github.com/ouyang-xlauncher/pipeline/test/parse"
 
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

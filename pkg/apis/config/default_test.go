@@ -20,10 +20,10 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/tektoncd/pipeline/pkg/apis/config"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/pod"
-	test "github.com/tektoncd/pipeline/pkg/reconciler/testing"
-	"github.com/tektoncd/pipeline/test/diff"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/pod"
+	test "github.com/ouyang-xlauncher/pipeline/pkg/reconciler/testing"
+	"github.com/ouyang-xlauncher/pipeline/test/diff"
 )
 
 func TestNewDefaultsFromConfigMap(t *testing.T) {

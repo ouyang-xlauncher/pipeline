@@ -22,7 +22,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/hashicorp/go-multierror"
-	resource "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	resource "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 	v1 "k8s.io/api/core/v1"
 )
 

@@ -37,11 +37,11 @@ spec:
         type: pullRequest
         params:
         - name: url
-          value: https://github.com/tektoncd/pipeline/pull/100
+          value: https://github.com/ouyang-xlauncher/pipeline/pull/100
     outputs:
     - name: pr
       resourceSpec:
         type: pullRequest
         params:
         - name: url
-          value: https://github.com/tektoncd/pipeline/pull/100
+          value: https://github.com/ouyang-xlauncher/pipeline/pull/100

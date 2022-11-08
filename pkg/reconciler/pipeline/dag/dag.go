@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tektoncd/pipeline/pkg/list"
+	"github.com/ouyang-xlauncher/pipeline/pkg/list"
 	"k8s.io/apimachinery/pkg/util/sets"
 )
 

@@ -19,8 +19,8 @@ package fake
 import (
 	"context"
 
-	_ "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1beta1/taskrun/fake" // Make sure the fake taskrun informer is setup
-	"github.com/tektoncd/pipeline/pkg/taskrunmetrics"
+	_ "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1beta1/taskrun/fake" // Make sure the fake taskrun informer is setup
+	"github.com/ouyang-xlauncher/pipeline/pkg/taskrunmetrics"
 	"k8s.io/client-go/rest"
 	"knative.dev/pkg/injection"
 )

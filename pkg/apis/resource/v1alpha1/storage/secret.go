@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	resource "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	resource "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 	corev1 "k8s.io/api/core/v1"
 )
 

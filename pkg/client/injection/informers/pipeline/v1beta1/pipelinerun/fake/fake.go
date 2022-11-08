@@ -21,8 +21,8 @@ package fake
 import (
 	context "context"
 
-	fake "github.com/tektoncd/pipeline/pkg/client/injection/informers/factory/fake"
-	pipelinerun "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1beta1/pipelinerun"
+	fake "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/factory/fake"
+	pipelinerun "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1beta1/pipelinerun"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 )

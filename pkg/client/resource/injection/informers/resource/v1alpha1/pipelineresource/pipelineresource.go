@@ -21,12 +21,12 @@ package pipelineresource
 import (
 	context "context"
 
-	apisresourcev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	versioned "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned"
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/client/resource/informers/externalversions/resource/v1alpha1"
-	client "github.com/tektoncd/pipeline/pkg/client/resource/injection/client"
-	factory "github.com/tektoncd/pipeline/pkg/client/resource/injection/informers/factory"
-	resourcev1alpha1 "github.com/tektoncd/pipeline/pkg/client/resource/listers/resource/v1alpha1"
+	apisresourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	versioned "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/informers/externalversions/resource/v1alpha1"
+	client "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/injection/client"
+	factory "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/injection/informers/factory"
+	resourcev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/listers/resource/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	cache "k8s.io/client-go/tools/cache"
@@ -59,7 +59,7 @@ func Get(ctx context.Context) v1alpha1.PipelineResourceInformer {
 	untyped := ctx.Value(Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch github.com/tektoncd/pipeline/pkg/client/resource/informers/externalversions/resource/v1alpha1.PipelineResourceInformer from context.")
+			"Unable to fetch github.com/ouyang-xlauncher/pipeline/pkg/client/resource/informers/externalversions/resource/v1alpha1.PipelineResourceInformer from context.")
 	}
 	return untyped.(v1alpha1.PipelineResourceInformer)
 }

@@ -20,7 +20,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/tektoncd/pipeline/pkg/apis/config"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/config"
 	"knative.dev/pkg/apis"
 )
 

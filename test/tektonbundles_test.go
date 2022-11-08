@@ -31,7 +31,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tektoncd/pipeline/test/parse"
+	"github.com/ouyang-xlauncher/pipeline/test/parse"
 
 	"github.com/ghodss/yaml"
 	"github.com/google/go-containerregistry/pkg/name"
@@ -40,8 +40,8 @@ import (
 	"github.com/google/go-containerregistry/pkg/v1/layout"
 	"github.com/google/go-containerregistry/pkg/v1/mutate"
 	"github.com/google/go-containerregistry/pkg/v1/tarball"
-	"github.com/tektoncd/pipeline/pkg/pod"
-	"github.com/tektoncd/pipeline/pkg/reconciler/pipelinerun"
+	"github.com/ouyang-xlauncher/pipeline/pkg/pod"
+	"github.com/ouyang-xlauncher/pipeline/pkg/reconciler/pipelinerun"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"knative.dev/pkg/apis"

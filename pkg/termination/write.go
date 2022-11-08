@@ -21,7 +21,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	v1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
+	v1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
 )
 
 const (

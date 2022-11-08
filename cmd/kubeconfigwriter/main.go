@@ -23,7 +23,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1/cluster"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1/cluster"
 	"go.uber.org/zap"
 	_ "k8s.io/client-go/plugin/pkg/client/auth/gcp"
 	"k8s.io/client-go/tools/clientcmd"

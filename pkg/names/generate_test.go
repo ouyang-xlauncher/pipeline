@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tektoncd/pipeline/test/names"
+	"github.com/ouyang-xlauncher/pipeline/test/names"
 )
 
 func TestRestrictLengthWithRandomSuffix(t *testing.T) {

@@ -21,8 +21,8 @@ package fake
 import (
 	context "context"
 
-	fake "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned/fake"
-	client "github.com/tektoncd/pipeline/pkg/client/resource/injection/client"
+	fake "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned/fake"
+	client "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/injection/client"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	rest "k8s.io/client-go/rest"
 	injection "knative.dev/pkg/injection"
@@ -51,7 +51,7 @@ func Get(ctx context.Context) *fake.Clientset {
 	untyped := ctx.Value(client.Key{})
 	if untyped == nil {
 		logging.FromContext(ctx).Panic(
-			"Unable to fetch github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned/fake.Clientset from context.")
+			"Unable to fetch github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned/fake.Clientset from context.")
 	}
 	return untyped.(*fake.Clientset)
 }

@@ -21,12 +21,12 @@ package filtered
 import (
 	context "context"
 
-	apispipelinev1alpha1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-	versioned "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline/v1alpha1"
-	client "github.com/tektoncd/pipeline/pkg/client/injection/client"
-	filtered "github.com/tektoncd/pipeline/pkg/client/injection/informers/factory/filtered"
-	pipelinev1alpha1 "github.com/tektoncd/pipeline/pkg/client/listers/pipeline/v1alpha1"
+	apispipelinev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
+	versioned "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline/v1alpha1"
+	client "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/client"
+	filtered "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/factory/filtered"
+	pipelinev1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/listers/pipeline/v1alpha1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	labels "k8s.io/apimachinery/pkg/labels"
 	cache "k8s.io/client-go/tools/cache"
@@ -81,7 +81,7 @@ func Get(ctx context.Context, selector string) v1alpha1.ConditionInformer {
 	untyped := ctx.Value(Key{Selector: selector})
 	if untyped == nil {
 		logging.FromContext(ctx).Panicf(
-			"Unable to fetch github.com/tektoncd/pipeline/pkg/client/informers/externalversions/pipeline/v1alpha1.ConditionInformer with selector %s from context.", selector)
+			"Unable to fetch github.com/ouyang-xlauncher/pipeline/pkg/client/informers/externalversions/pipeline/v1alpha1.ConditionInformer with selector %s from context.", selector)
 	}
 	return untyped.(v1alpha1.ConditionInformer)
 }

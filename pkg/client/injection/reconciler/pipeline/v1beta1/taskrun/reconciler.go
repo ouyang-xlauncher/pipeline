@@ -23,9 +23,9 @@ import (
 	json "encoding/json"
 	fmt "fmt"
 
-	v1beta1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	versioned "github.com/tektoncd/pipeline/pkg/client/clientset/versioned"
-	pipelinev1beta1 "github.com/tektoncd/pipeline/pkg/client/listers/pipeline/v1beta1"
+	v1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	versioned "github.com/ouyang-xlauncher/pipeline/pkg/client/clientset/versioned"
+	pipelinev1beta1 "github.com/ouyang-xlauncher/pipeline/pkg/client/listers/pipeline/v1beta1"
 	zap "go.uber.org/zap"
 	v1 "k8s.io/api/core/v1"
 	equality "k8s.io/apimachinery/pkg/api/equality"

@@ -21,7 +21,7 @@ package run
 import (
 	fmt "fmt"
 
-	v1alpha1 "github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
+	v1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
 	types "k8s.io/apimachinery/pkg/types"
 	cache "k8s.io/client-go/tools/cache"
 	reconciler "knative.dev/pkg/reconciler"

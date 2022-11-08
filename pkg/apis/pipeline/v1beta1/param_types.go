@@ -22,8 +22,8 @@ import (
 	"fmt"
 	"strings"
 
-	resource "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
-	"github.com/tektoncd/pipeline/pkg/substitution"
+	resource "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/substitution"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"knative.dev/pkg/apis"
 )

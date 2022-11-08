@@ -21,10 +21,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tektoncd/pipeline/test/parse"
+	"github.com/ouyang-xlauncher/pipeline/test/parse"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1alpha1"
-	ttesting "github.com/tektoncd/pipeline/pkg/reconciler/testing"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1alpha1"
+	ttesting "github.com/ouyang-xlauncher/pipeline/pkg/reconciler/testing"
 )
 
 func TestWaitForTaskRunStateSucceed(t *testing.T) {

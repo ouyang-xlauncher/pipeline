@@ -21,7 +21,7 @@ package versioned
 import (
 	"fmt"
 
-	tektonv1alpha1 "github.com/tektoncd/pipeline/pkg/client/resource/clientset/versioned/typed/resource/v1alpha1"
+	tektonv1alpha1 "github.com/ouyang-xlauncher/pipeline/pkg/client/resource/clientset/versioned/typed/resource/v1alpha1"
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"

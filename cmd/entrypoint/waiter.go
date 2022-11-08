@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/tektoncd/pipeline/pkg/entrypoint"
+	"github.com/ouyang-xlauncher/pipeline/pkg/entrypoint"
 )
 
 // realWaiter actually waits for files, by polling.

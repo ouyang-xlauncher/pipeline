@@ -37,7 +37,7 @@ import (
 )
 
 const (
-	pkg = "github.com/tektoncd/pipeline/cmd/pullrequest-init"
+	pkg = "github.com/ouyang-xlauncher/pipeline/cmd/pullrequest-init"
 )
 
 var (

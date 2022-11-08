@@ -19,7 +19,7 @@ package v1alpha1
 import (
 	"context"
 
-	"github.com/tektoncd/pipeline/pkg/apis/validate"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/validate"
 	"knative.dev/pkg/apis"
 )
 

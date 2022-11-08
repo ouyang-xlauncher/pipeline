@@ -38,7 +38,7 @@ spec:
   serviceAccountName: tekton-pipelines-controller
   containers:
     - name: tekton-pipelines-controller
-      image: ko://github.com/tektoncd/pipeline/cmd/controller
+      image: ko://github.com/ouyang-xlauncher/pipeline/cmd/controller
       args: [
           "-kube-api-qps", "50",
           "-kube-api-burst", "50",

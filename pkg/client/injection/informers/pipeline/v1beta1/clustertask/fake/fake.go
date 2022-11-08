@@ -21,8 +21,8 @@ package fake
 import (
 	context "context"
 
-	fake "github.com/tektoncd/pipeline/pkg/client/injection/informers/factory/fake"
-	clustertask "github.com/tektoncd/pipeline/pkg/client/injection/informers/pipeline/v1beta1/clustertask"
+	fake "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/factory/fake"
+	clustertask "github.com/ouyang-xlauncher/pipeline/pkg/client/injection/informers/pipeline/v1beta1/clustertask"
 	controller "knative.dev/pkg/controller"
 	injection "knative.dev/pkg/injection"
 )

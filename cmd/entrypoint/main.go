@@ -25,13 +25,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/tektoncd/pipeline/cmd/entrypoint/subcommands"
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline"
-	"github.com/tektoncd/pipeline/pkg/credentials"
-	"github.com/tektoncd/pipeline/pkg/credentials/dockercreds"
-	"github.com/tektoncd/pipeline/pkg/credentials/gitcreds"
-	"github.com/tektoncd/pipeline/pkg/entrypoint"
-	"github.com/tektoncd/pipeline/pkg/termination"
+	"github.com/ouyang-xlauncher/pipeline/cmd/entrypoint/subcommands"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline"
+	"github.com/ouyang-xlauncher/pipeline/pkg/credentials"
+	"github.com/ouyang-xlauncher/pipeline/pkg/credentials/dockercreds"
+	"github.com/ouyang-xlauncher/pipeline/pkg/credentials/gitcreds"
+	"github.com/ouyang-xlauncher/pipeline/pkg/entrypoint"
+	"github.com/ouyang-xlauncher/pipeline/pkg/termination"
 )
 
 var (

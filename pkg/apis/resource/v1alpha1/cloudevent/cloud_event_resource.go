@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tektoncd/pipeline/pkg/apis/pipeline/v1beta1"
-	resource "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	"github.com/ouyang-xlauncher/pipeline/pkg/apis/pipeline/v1beta1"
+	resource "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 )
 
 // Resource is an event sink to which events are delivered when a TaskRun has finished

@@ -17,7 +17,7 @@ limitations under the License.
 package v1alpha1
 
 import (
-	resource "github.com/tektoncd/pipeline/pkg/apis/resource/v1alpha1"
+	resource "github.com/ouyang-xlauncher/pipeline/pkg/apis/resource/v1alpha1"
 )
 
 // PipelineResourceType represents the type of endpoint the pipelineResource is, so that the
